@@ -1,0 +1,16 @@
+{
+  "name": "archive-page",
+  "version": "1.0.0",
+  "description": "Archive and screenshot one or multiple URLs",
+  "main": "archive.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "archive.is": "0.0.2",
+    "minimist": "^1.2.0",
+    "puppeteer": "^1.5.0"
+  }
+}
