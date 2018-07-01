@@ -21,7 +21,7 @@ Archiving a single URL
 node archive.js --url=https://google.com --headless=true
 ```
 
-Batch archiving URLs via the included bash script.
+Batch URL archiving using the included bash script.
 ```
 ./batch.sh urls.txt > log.txt
 ```
