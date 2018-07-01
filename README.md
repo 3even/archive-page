@@ -20,8 +20,12 @@ Archiving a single URL
 ```
 node archive.js --url=https://google.com --headless=true
 ```
+Pipe(|) seperated output format:
+```
+Source URL | Archive.is URL | .png file
+```
 
 Batch URL archiving using the included bash script.
 ```
-./batch.sh urls.txt > log.txt
+./batch.sh urls.txt > output.txt
 ```
