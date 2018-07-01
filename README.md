@@ -1,6 +1,6 @@
 # Archive-Page
 
-Archive and screenshot one or multiple URLs using Google Chrome's [Puppeteer](https://github.com/GoogleChrome/puppeteer). This script will create a archived snapshot using [Archive.is](https://archive.is/) and generate a .png screenshot saved locally in */screenshots*
+Archive and screenshot one or multiple URLs using Google Chrome's [Puppeteer](https://github.com/GoogleChrome/puppeteer). This script will create an archived snapshot using [Archive.is](https://archive.is/) and generate a .png screenshot saved locally in */screenshots*
 
 ## Dependencies
 
