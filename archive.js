@@ -23,6 +23,9 @@ var filename = Math.round((new Date()).getTime() / 1000);
   const page = await browser.newPage();
   await page.setViewport({width: 1600, height: 900})
   await page.goto(argv.url, {"waitUntil" : "networkidle0"});
+  for (let i = 0; i < 900; i++)
+    await page.keyboard.press('ArrowDown');
+    await page.waitFor(500);
   await page.screenshot({path: dir+'/'+filename+'.png', fullPage: true});
   await archive.save(argv.url).then(function (result) {
     console.log(argv.url+'|'+result.shortUrl+'|'+filename);
