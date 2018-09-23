@@ -26,6 +26,8 @@ var filename = Math.round((new Date()).getTime() / 1000);
   for (let i = 0; i < 900; i++)
     await page.keyboard.press('ArrowDown');
     await page.waitFor(500);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitFor(4000);
   await page.screenshot({path: dir+'/'+filename+'.png', fullPage: true});
   await archive.save(argv.url).then(function (result) {
     console.log(argv.url+'|'+result.shortUrl+'|'+filename);
